@@ -16,7 +16,7 @@ class TextFields extends StatelessWidget {
         textInputAction: TextInputAction.done,
         controller: this.textfield,
         inputFormatters: [
-          FilteringTextInputFormatter.allow(RegExp("[a-zA-Z]")),
+          FilteringTextInputFormatter.allow(RegExp('[a-zA-Z ]')),
           LengthLimitingTextInputFormatter(20),
         ],
         keyboardType: TextInputType.text,
